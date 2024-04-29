@@ -1,12 +1,23 @@
-# -Gesture-Recognition-Project
+# Gesture-Recognition-Project
 
 # Problem Statement:
 
 Develop a deep learning model for video action recognition capable of accurately classifying human actions or activities in video sequences. The model should be able to differentiate between various actions such as walking, running, jumping, etc., and achieve high accuracy in classifying these actions.
 
-# Overview:
+Recognising 5 different hand gestures to control a smart TV. We need to develop a cool feature in the smart-TV that can recognise five different gestures performed by the user which will help users control the TV without using a remote.
 
-Video action recognition is a challenging task in computer vision, with applications ranging from surveillance to human-computer interaction and sports analysis. The objective of this project is to create a robust deep learning model that can effectively identify and classify human actions or activities in video clips.
+The gestures are continuously monitored by the webcam mounted on the TV. Each gesture corresponds to a specific command:
+
+- Thumbs up: Increase the volume
+- Thumbs down: Decrease the volume
+- Left swipe: 'Jump' backwards
+- Right swipe: 'Jump' forward
+- Stop: Pause the movie
+
+The training data consists of a few `hundred videos categorised into one of the five classes`. Each video (typically 2-3 seconds long) is divided into a sequence of `30 frames(images)`. These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use.
+
+# Overview:
+The objective of this project is to create a robust deep learning model that can effectively identify and classify human actions or activities in video clips.
 
 The proposed model architecture will leverage convolutional neural networks (CNNs) for spatial feature extraction and recurrent neural networks (RNNs) for capturing temporal dependencies. CNNs will extract spatial features from individual frames, while RNNs will analyze sequences of features to understand the temporal relationships between frames.
 
@@ -41,3 +52,7 @@ The expected outcome is a deep learning model that can accurately classify human
 
 - The model achieves high training accuracy, with categorical accuracy reaching 100%.
 - Validation accuracy is also high, reaching up to 97% on some epochs.
+
+# Contributers:
+- Zeba Firdouse
+-  Rajesh
